@@ -7,8 +7,15 @@ This is an artisan command to convert your current SQL database schema into a La
 1. Add the package to your composer.json file and run `composer update`:
 
 ```json
+"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/chriscampbell/laravel-convert-migrations"
+		}
+
+	],
 "require": {
-    "adamkearsley/convert-migrations": "dev-master"
+    "chriscampbell/convert-migrations" : "dev-master"
 }
 ```
 
